@@ -1,13 +1,16 @@
 import jsxLite from '@jsxLite'
+import logoImage from './assets/logo.png'
+
+import './App.css'
 
 const App = () => {
-  const name = 'Javascript'
+  const appName = 'JSX Lite'
 
   return (
-    <div>
-      <h1>Hello, {name}!</h1>
-      <p class="regular">This is pretty cool.</p>
-      <button onclick={() => alert('Hello, world!')}>Click me!</button>
+    <div class="main-container">
+      <img src={logoImage} alt="Logo" />
+      <h1>This is {appName}</h1>
+      <p>A small package transpiler for a JSX app.</p>
     </div>
   )
 }
